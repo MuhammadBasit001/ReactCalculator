@@ -32,8 +32,8 @@ const Calculator = () => {
     "7", "8", "9", "/",
     "4", "5", "6", "*",
     "1", "2", "3", "-",
-    "0", ".", "=", "+",
-    "C"
+    "c", "0", ".", "+",
+    "="
   ];
 
   return (
@@ -49,7 +49,7 @@ const Calculator = () => {
             <Button
               key={i}
               onClick={() => handleClick(btn)}
-              className={btn === "=" ? "col-span-2 bg-green-600 hover:bg-green-500" : ""}
+              className={btn === "=" ? "col-span-4  bg-green-600 hover:bg-green-500" : ""}
             >
               {btn}
             </Button>
