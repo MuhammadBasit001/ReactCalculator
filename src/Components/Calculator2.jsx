@@ -4,7 +4,7 @@ import { useState } from "react";
 const Button = ({ children , onClick, className = "" }) => (
     <button
   onClick = { onClick }
-  className = {`p-4 border-black  rounded-xl bg-slate-500 text-2xl font-bold text-slate-950 border ${className}`}
+  className = {`p-4 border-black  rounded-xl bg-slate-500 text-2xl font-bold text-slate-950gti border ${className}`}
 >
     {children}
     </button>
@@ -61,6 +61,7 @@ const Calculator2 = () => {
               onClick={() => handlebutton(btn)}
               className={btn ==="=" ? "col-span-4" : "" }
             >
+              <P>Calculator</P>
               {btn}
             </Button>
           ))}
